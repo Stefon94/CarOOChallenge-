@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+body {
+  background-color: lightgray;
+}
+header
+{
+  border-style: solid;
+  border-color: darkblue;
+  border-width: .5em;
+  padding: 30px;
+}
+header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#info {
+    display: flex;
+    justify-content: end;
+}
+h1 {
+    z-index: -1;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-family: garamond, serif;
+    color: purple; 
+    font-size: 5rem;
+}
+/* media code changes display to be mobile friendly */
+@media (max-width: 900px) {
+  h1 {
+    position: relative;
+    top: 200px;
+    text-align:left;
+    font-family: garamond, serif;
+    color: purple; 
+    font-size: 3em;
+  }
+  body {
+    background-color: aqua;
+  }
+}
+h2 {
+    color: hsl(84, 92%, 10%);
+}
+h3 {
+    color: purple;   
+    background-color: azure;
+}
+h3 + ul {
+  border-color: darkblue;
+  border-style: solid;
+  border-width: 5px;
+  padding: 1em;
+  padding-left: 2rem;
+}
+p {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 140%;
+}
+ul {
+    font-weight: bold
+}
+img {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.awards  {
+  margin-left: auto;
+  margin-right: auto;  
+  border: 5px solid darkblue;
+  width: 40%;
+  padding: 5px;
+  font-size: 1.75rem;
+}
+.textbox {
+  transition: 1s;
+}
+.textbox:hover {
+  background-color: greenyellow;
+  }
+  button {
+    transition: .5s;
+  }
+  button:hover {
+    background-color: darkblue;
+    color: white;
+  }
+    </style>
+    <meta charset="UTF-8">
+    <title>Steven J. Noto Software Engineer</title>
+  </head>
+  <body>
+    <!-- TODO: Header info for top of page with contact info. -->
+    <header>
+        <h1>Steven J. Noto</h1>
+        <img src="c5b0fdea-1b3a-4a96-8e48-08a05ba78710.jpg" height= 190px width="190px" alt="Steven Noto">
+        <hr>
+        <p>
+            <h2 id="info">Contact</h2>
+            <ul>
+       <li><a href = "mailto: Stefon94@gmail.com">Email: Stefon94@gmail.com</a></li>
+       <li>Phone: 631-767-7723</li>
+       <li><a href = "https://www.linkedin.com/in/steven-noto-400a052a4/">Linkedin</a></li>
+            </ul>
+        </p>
+    </header>
+<main>
+  <!--A short summary explaining the journey that let me to this career path-->
+    <h3>About Me</h3>
+    <p>Originally from Long Island, New York I am currently 36 years of age. My first experience with computer software started in high school, where i studied webpage design and learned the basics of HTML. The following year I moved on to the next course, which was the basic of Javascript. After high school, I began working in sales and customer service for a constuction equipment company, where i remained for 17 years. by 2023, I had become a married man and a father to my daughter. No longer looking to be a sales person, I decided to make a career change. I remembered my days in high school learning the basics of computer software. It is hard to ignore how prevalent this industry is today, and how important it is going into the future. After signing up for coding bootcamp from Springboard at Stony Brook University, I quickly refreshed my skillset with software. Over the course of 9 months I fine tuned my skills to keep up with todays technology and become a professional at the craft. I am ready to start my new career as a Software Engineer!</p>
+    <!--A list of my edcuation background-->
+    <h3>Education History</h3>
+      <ul>
+        <li>Springboard Coding Boot Camp at Stony Brook University- Jan 2024-Sept. 2024</li>
+        <li>Rocky Point High School- Gradutation June 2005</li>
+      </ul>
+      <!--List of past occupations up until now-->
+    <h3>Occupation History</h3>
+      <ul>
+        <li>Power Home Remodeling- Nov. 2021- June 2022</li>
+        <li>Genetco Inc.- May 2021- Nov 2021</li>
+        <li>Sunbelt Rentals- April 2017- May 2021</li>
+        <li>Pride Equipment Corp- Feb. 2006- April 2017</li>
+        <li>Waldbaums- April 2003- Jan 2006</li>
+      </ul>
+      <!--Programs learned during coding bootcamp-->
+    <h3>Program Technologies</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>Dom</li>
+        <li>Node</li>
+      </ul>
+      <!--Lifetime awards earned in my professional career-->
+      <h3>Awards</h3>
+    <table class="awards">
+      <caption>Awards given by name</caption>
+      <thead>
+        <tr>
+          <th id="thead">Award</th>
+          <th id="thead">Acheivement</th>
+          <th id="thead">Year</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>Outstanding coding award</td>
+        <td>Given to top coder</td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td>Engineer of the Year</td>
+        <td>Given to #1 Engineer</td>
+        <td>2022</td>
+      </tr>
+      <tr>
+          <td>Steve Jobs sales award</td>
+          <td>Given to yearly top sales rep</td>
+          <td>2022</td>
+      </tr>
+      <tr>
+        <td>Google Rookie of the year</td>
+        <td>Given to top coder in first year<tdr>
+        <td>2021</td>
+      </tr>
+    </tbody>
+    </table>
+</main>
+<footer>
+  <!--Form for interested parties to submit to me-->
+  <hr>
+  <h4>Contact Steven Noto</h4>
+  <form>
+    <input type= "text" class="textbox" name="First Name" placeholder="First Name"><br>
+    <input type="text" class="textbox"name="Last Name" placeholder="Last Name"><br>
+    <input type="text" class="textbox" name="Email" placeholder="Email Address"><br>
+    <input type="text" class="textbox" name="Company Name" placeholder="Company Name">
+  </form>
+  <form><br>
+    <b>Where did you find me?</b><br>
+    <br>
+    <label>Linkedin
+      <input type="radio" name="find" Value="Linkedin"><br>
+    </label>
+    <label>Glass Door
+      <input type="radio" name="find" value="Glass Door"><br>
+    </label>
+    <label>Indeed
+      <input type="radio" name="find" value="Indeed"><br>
+    </label>
+    <label>Other
+      <input type="radio" name="find" value="Other">
+    </label>
+    <label>Describe other
+      <input type="text" class="textbox" name="find">
+    </label><br>
+    <br>
+  </form>
+  <label>Write me a message!
+<textarea class="textbox" name="message" id="" cols="30" rows="1" minlenght="1" maxlength="1000" placeholder="Max 1000 Characters"></textarea>
+  </label>
+  <button type="submit"><b>Submit Form</b></button>
+  <ul>
+    <li>631-767-7723</li>
+    <li><a href = "mailto: Stefon94@gmail.com">Email: Stefon94@gmail.com</a></li>
+  </ul>
+</footer>
+  </body>
+</html>
